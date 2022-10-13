@@ -1,0 +1,83 @@
+.np-container{
+  background-color: rgb(10, 24, 42);
+  height: 100vh;
+  padding: 5% 25%;
+}
+
+.box-container{
+  min-width: 1000px;
+
+  overflow-y: auto;
+}
+
+.null{
+  background-color: white;
+  width: 90px;
+  height: 90px;
+  margin: 5PX 5px;
+  border: 1px solid grey;
+}
+
+.fizz{
+  background-color: rgb(29, 193, 199);
+  width: 90px;
+  height: 90px;
+  margin: 5PX 5px;
+}
+
+.buzz{
+  background-color: yellow;
+  width: 90px;
+  height: 90px;
+  margin: 5PX 5px;
+}
+
+
+
+.fizzbuzz{
+  background-color: white;
+  background-image: linear-gradient(yellow , rgb(29, 193, 199));
+  width: 90px;
+  height: 90px;
+  margin: 5PX 5px;
+}
+
+button{
+  all: unset;
+  background-color: coral;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  position: absolute;
+  
+}
+
+button:hover{
+  box-shadow: 0 0 10px  white;
+  transition: .3s;
+}
+
+button:focus{
+transform: rotate(360deg);
+transition: .5s;
+}
+
+.hide{
+  transition: 1s;
+  opacity: 0;
+}
+
+h2{
+  font-size: 50px;
+  color: whitesmoke;
+}
+
+.box-container div{
+  text-align: center;
+  line-height: 90px;
+  transition: 2s;
+}
