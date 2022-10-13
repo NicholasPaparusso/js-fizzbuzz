@@ -1,9 +1,11 @@
 // Data layer
 const limit = 100;
 const boxCont = document.querySelector('.box-container') 
+let btn = document.querySelector('.np-btn');
 
 
-
+btn.addEventListener('click', start);
+function start(){
 for(let x = 1; x <= limit ; x++ ){
   const box = document.createElement('div')
   box.className = 'null'
@@ -21,5 +23,8 @@ for(let x = 1; x <= limit ; x++ ){
 }
 boxCont.append(box);
 }
+boxCont.classList.add('show');
+btn.classList.add('hide');
+};
 
 

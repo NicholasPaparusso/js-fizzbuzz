@@ -6,8 +6,9 @@
 
 .box-container{
   min-width: 1000px;
-
   overflow-y: auto;
+  height: 50vh;
+  display: none !important;
 }
 
 .null{
@@ -23,6 +24,17 @@
   width: 90px;
   height: 90px;
   margin: 5PX 5px;
+  animation: tickle .2s infinite ;
+  position: relative;
+}
+
+@keyframes tickle {
+  0%{left: -0.1%; 
+  }
+  100%{
+    right:-0.1%
+  }
+
 }
 
 .buzz{
@@ -30,8 +42,17 @@
   width: 90px;
   height: 90px;
   margin: 5PX 5px;
+  animation: scale .5s infinite;
 }
 
+@keyframes scale{
+ 0%{
+  transform: scale(1);
+ }
+ 100%{
+  transform: scale(0.8);
+ }
+}
 
 
 .fizzbuzz{
@@ -39,7 +60,18 @@
   background-image: linear-gradient(yellow , rgb(29, 193, 199));
   width: 90px;
   height: 90px;
-  margin: 5PX 5px;
+  margin: 5px 5px;
+  border-radius: 50%;
+  animation: rotate 1s infinite;
+}
+
+@keyframes rotate{
+  0%{
+  transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
 
 button{
@@ -52,7 +84,7 @@ button{
   font-weight: 700;
   color: white;
   text-shadow: 2px 2px 2px black;
-  position: absolute;
+  
   
 }
 
@@ -61,14 +93,13 @@ button:hover{
   transition: .3s;
 }
 
-button:focus{
-transform: rotate(360deg);
-transition: .5s;
+
+.show{
+  display: flex !important;
 }
 
 .hide{
-  transition: 1s;
-  opacity: 0;
+  display: none !important;
 }
 
 h2{
@@ -80,4 +111,10 @@ h2{
   text-align: center;
   line-height: 90px;
   transition: 2s;
+}
+
+.btn-2{
+  background-color: unset;
+  scale: 0.5;
+  color: red;
 }
